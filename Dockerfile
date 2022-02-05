@@ -6,7 +6,7 @@ RUN useradd developer -U -m -s /bin/bash
 
 RUN apt-get update
 
-RUN apt-get -y install apt-transport-https lsb-release ca-certificates wget net-tools nano sudo telnet vim
+RUN apt-get -y install apt-transport-https ca-certificates
 
 RUN apt-get update && \
   apt-get -y install \
